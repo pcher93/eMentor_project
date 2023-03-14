@@ -1,0 +1,9 @@
+/* mentee profile */
+
+.container py-5 {
+    display: flex; /* use flexbox to make columns align next to each other */
+  }
+  
+  .col-lg-12 {
+    height: 100%; /* set height to 100% so both columns are the same height */
+  }
