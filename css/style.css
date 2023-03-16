@@ -1,96 +1,201 @@
 @import url('https://fonts.cdnfonts.com/css/mont'); 
 
-/* mentee profile */
+html {
+  height: 100%;
+}
+
+body{
+  height: 100%;
+}
+
+/* profiles */
 
 .container py-5 {
     display: flex; /* use flexbox to make columns align next to each other */
     font-family: 'Mont', sans-serif;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
 
   }
+/* mentee profile */
+
+/* <---- add styles here ---> */
+
+
+/* mentor profile */
+/* <---- photo/info/social ---> */
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+  max-width: 1292px;
   
-  .col-lg-12 {
-    height: 100%; /* set height to 100% so both columns are the same height */
-    font-family: 'Mont', sans-serif;
-
   }
 
-  /* mentor profile */
+  .column-1 {
+  left: -112px;
+  width: 375px; 
+  height: 400px;
+
+  }
+  .column-2 {
+    font-family: 'Mont', sans-serif;
+    width: 855px; 
+    height: 400px;
+  }
+
+  @media (max-width: 768px) {
+    .column-1,
+    .column-2{
+      width: 100%;
+    }}
+
+/* <---- about me / goals ---> */
+
   .section-container{
     display: flex;
-  }
-  .section-1, .section-2{
-    flex-basis: 50%;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+    position: absolute;
+    background-color: #ffffff;
     font-family: 'Mont', sans-serif;
+width: 1292px;
+height: 1000px;
+left: 85px;
+top: 680px;
+z-index: 1;
+  }
+
+  .sections {
+    position: relative;
+    width: 548px;
+height: 1003px;
+text-align: center;
+background-color: #ccc;
+
+  }
+
+  .section-1 {
+    display: flex;
+    position:absolute;
+    top: 60px;
+  left: 0;
+    padding: 20px;
+    
+  }
+
+  .section-2 {
+    display: flex;
+    position:absolute;
+    top: 500px;
+    left: 0px;
+    padding: 20px;
   }
 
   /* Media query for screens smaller than 768px */
   @media (max-width: 767px) {
-    .section-1, .calendar-widget {
+    .section-1, .section-2{
       display: flex;
-      flex-basis: 50%;
       max-width: 100%;
       padding: 10px;
     }
   }
 
-/* mentor profile calendar */
-  .calendar-widget {
-    display: flex;
-    flex-basis: 50%;
-    font-family: 'Mont', sans-serif;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    width: 300px;
-    align-items: center;
-  }
+/* <---- calendar ---> */
+.dropdown-menu {
+  position:relative;
+  left: 300x;
+  height: 354px;
+  top: 1500px;
   
-  .calendar-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-  }
   
-  .calendar-title {
-    margin: 0;
-  }
-  
-  .calendar-table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  .calendar-table th {
-    font-weight: normal;
-    text-align: center;
-    padding: 5px;
-    border-bottom: 1px solid #ccc;
-  }
-  
-  .calendar-table td {
-    text-align: center;
-    padding: 5px;
-    border: 1px solid #ccc;
-  }
-  
-  .calendar-table td:hover {
-    background-color: #eee;
-  }
-  
-  .prev-month,
-  .next-month {
-    background-color: transparent;
-    border: none;
-    font-size: 18px;
-    cursor: pointer;
-  }
-  
-  .prev-month:hover,
-  .next-month:hover {
-    color: #ccc;
-  }
-  
+}
+
+.dropdown-item-danger {
+  color: var(--bs-red);
+}
+.dropdown-item-danger:hover,
+.dropdown-item-danger:focus {
+  color: #fff;
+  background-color: var(--bs-red);
+}
+.dropdown-item-danger.active {
+  background-color: var(--bs-red);
+}
+
+.btn-hover-light {
+  background-color: var(--bs-white);
+}
+.btn-hover-light:hover,
+.btn-hover-light:focus {
+  color: var(--bs-blue);
+  background-color: var(--bs-light);
+}
+
+.cal-month,
+.cal-days,
+.cal-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+
+}
+.cal-month-name {
+  grid-column-start: 2;
+  grid-column-end: 7;
+  text-align: center;
+}
+.cal-weekday,
+.cal-btn {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  padding: 0;
+}
+.cal-btn:not([disabled]) {
+  font-weight: 500;
+}
+.cal-btn:hover,
+.cal-btn:focus {
+  background-color: rgba(0, 0, 0, .05);
+}
+.cal-btn[disabled] {
+  border: 0;
+  opacity: .5;
+}
+
+.form-control-dark {
+  background-color: rgba(255, 255, 255, .05);
+  border-color: rgba(255, 255, 255, .15);
+}
+
+
+.w-220px {
+  width: 220px;
+}
+
+.w-280px {
+  width: 280px;
+}
+
+.w-340px {
+  width: 340px;
+}
+
+.w-600px {
+  width: 600px;
+}
+
+
+/* <---- footer ---> */  
+footer {
+  position: relative;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  z-index: 2;
+  overflow: hidden;
+  margin-top: 450px;
+}
+
