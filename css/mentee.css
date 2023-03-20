@@ -360,170 +360,6 @@ max-width: 540px;
 
 
 
-/* mentor profile */
-/* <---- photo/info/social ---> */
-
-  .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 2fr; 
-  max-width: 1292px;
-  
-  }
-
-  .column-1 {
-  left: -112px;
-  width: 375px; 
-  height: 400px;
-
-  }
-  .column-2 {
-    font-family: 'Mont', sans-serif;  
-    width: 855px; 
-    height: 400px;
-  }
-
-  @media (max-width: 768px) {
-    .column-1,
-    .column-2{
-      width: 100%;
-    }}
-
-/* <---- about me / goals ---> */
-
-  .section-container{
-    display: flex;
-    position: absolute;
-    background-color: #ffffff;
-    font-family: 'Mont', sans-serif;  
-width: 1292px;
-height: 1000px;
-left: 85px;
-top: 680px;
-z-index: 1;
-  }
-
-  .sections {
-    position: relative;
-    width: 548px;
-height: 1003px;
-text-align: center;
-background-color: #ccc;
-
-  }
-
-  .section-1 {
-    display: flex;
-    position:absolute;
-    top: 60px;
-  left: 0;
-    padding: 20px;
-    
-  }
-
-  .section-2 {
-    display: flex;
-    position:absolute;
-    top: 500px;
-    left: 0px;
-    padding: 20px;
-  }
-
-  /* Media query for screens smaller than 768px */
-  @media (max-width: 767px) {
-    .section-1, .section-2{
-      display: flex;
-      max-width: 100%;
-      padding: 10px;
-    }
-  }
-
-/* <---- calendar ---> */
-.dropdown-menu {
-  position:relative;
-  left: 300x;
-  height: 354px;
-  top: 1500px;
-  
-  
-}
-
-.dropdown-item-danger {
-  color: var(--bs-red);
-}
-.dropdown-item-danger:hover,
-.dropdown-item-danger:focus {
-  color: #fff;
-  background-color: var(--bs-red);
-}
-.dropdown-item-danger.active {
-  background-color: var(--bs-red);
-}
-
-.btn-hover-light {
-  background-color: var(--bs-white);
-}
-.btn-hover-light:hover,
-.btn-hover-light:focus {
-  color: var(--bs-blue);
-  background-color: var(--bs-light);
-}
-
-.cal-month,
-.cal-days,
-.cal-weekdays {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  align-items: center;
-
-}
-.cal-month-name {
-  grid-column-start: 2;
-  grid-column-end: 7;
-  text-align: center;
-}
-.cal-weekday,
-.cal-btn {
-  display: flex;
-  flex-shrink: 0;
-  align-items: center;
-  justify-content: center;
-  height: 3rem;
-  padding: 0;
-}
-.cal-btn:not([disabled]) {
-  font-weight: 500;
-}
-.cal-btn:hover,
-.cal-btn:focus {
-  background-color: rgba(0, 0, 0, .05);
-}
-.cal-btn[disabled] {
-  border: 0;
-  opacity: .5;
-}
-
-.form-control-dark {
-  background-color: rgba(255, 255, 255, .05);
-  border-color: rgba(255, 255, 255, .15);
-}
-
-
-.w-220px {
-  width: 220px;
-}
-
-.w-280px {
-  width: 280px;
-}
-
-.w-340px {
-  width: 340px;
-}
-
-.w-600px {
-  width: 600px;
-}
-
 
 /* <---- footer ---> */  
 footer {
@@ -538,6 +374,7 @@ footer {
   
 }
 .nav-item1 {
+
   text-decoration: none;
   font-family: 'Mont', sans-serif; 
   font-style:normal;
@@ -555,6 +392,23 @@ a {
 
 a:hover {
   color:#D5D984;
+}
+
+.icon {
+  display: inline-block;
+  list-style: none;
+
+
+}
+
+.icon img {
+  width: 100%;
+  max-width: 40px;
+  height: 100%;
+  max-height: 40px;
+  margin: 10px;
+
+  
 }
 
 .copyright {

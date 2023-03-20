@@ -1,0 +1,574 @@
+html {
+    height: 100%;
+  }
+  
+  body{
+    height: 100%;
+    font-family: 'Mont', sans-serif; 
+    font-style: normal;
+  }
+
+h1 {
+    font-family: 'Mont', sans-serif; 
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 18px;
+
+}
+  /* Change the font size for <h1> when screen is less than 768px */
+  @media screen and (max-width: 767px) {
+    h1 {
+      font-size: 24px;
+    }
+  
+    p {
+      font-size: 16px;
+    }
+  }
+  
+  @media screen and (max-width: 430px) {
+    h1 {
+      font-size: 16px;
+    }
+  
+    p {
+      font-size: 12px;
+    }
+  }
+  
+  .b-example-divider {
+    height: 2rem;
+    background-color: #ffffff;
+    
+  }
+  
+  /* main nav */
+  #navbarExample01 {
+    justify-content: center;
+    align-items: center;
+  }
+  .container-fluid {
+    width: 100%;
+    height: 121px;
+    flex-wrap: wrap;
+    
+  }
+  .nav-btn {
+    display: inline-block;
+  
+  }
+   .nav-item2 {
+    margin-left: 300px;
+    height: 50px;
+    width: 440px;
+    font-size: 24px;
+    margin-top: 10px;
+  
+  
+   }
+  .nav-link {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+  }
+  
+   .sign-link{
+    display: inline-block;
+    background: #D5D984;
+    color: #000000;
+    border-color: #000000;
+    font-family: 'Mont', sans-serif; 
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 18px;
+    padding: 15px 15px;
+    text-align: center;
+  width: 213px;
+  height: 48px;
+  border-radius: 5px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  
+  }
+  
+  .sign-link:hover {
+    color: #3E6C72;
+    background: #D5D984;
+    border-color: #000000;
+    text-decoration: underline;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  
+  .sign-link:focus {
+    color: #000000;
+    background: #BADAD5!important;
+    border-color: #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  
+  }
+  .sign-link:active {
+    color: #000000;
+    background: #D8BDF2!important;
+    border-color: #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  
+  .sign-link:disabled {
+    color: #000000;
+    background: #B5B5B5;
+    border-color: #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  } 
+  
+  /* profiles */
+  
+  .container py-5 {
+      display: flex; /* use flexbox to make columns align next to each other */
+      font-family: 'Mont', sans-serif;  
+      flex-wrap: wrap;
+      justify-content: space-between;
+  
+    }
+  
+    .container {
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+      
+      }
+
+/* mentor profile */
+/* <---- photo/info ---> */
+.card-body {
+    width: 30vw;
+  height: 30vw;
+  overflow: hidden;
+  margin-left: 0px;
+  padding-left: 20px;
+  }
+  
+  .card-body img {
+    object-fit: contain;
+  }
+  
+  .mb-8-1 {
+    width: 100%;
+    max-width: 747.75;
+    height: 100%;
+    max-height: 515.09375px;
+    box-sizing: border-box;
+    overflow: auto;
+  
+  }
+  .card-body2 {
+    
+    font-family: 'Mont', sans-serif;  
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
+    max-width: 800.375;
+    height: 100%;
+    max-height: 515.09375px;
+    box-sizing: border-box;
+    overflow: auto;
+  
+    color: #000000;
+  
+  }
+  
+  .my-3 {
+    font-family: 'Mont', sans-serif; 
+    font-style:normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 18px;
+    padding-top: 63px;
+    color: #000000;
+  
+  }
+  
+  
+  .text-muted {
+    color: #000000!important;
+    font-family: 'Mont', sans-serif; 
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 24px;
+  
+  }
+  
+  .text-muted-1 {
+    color: #000000;
+    font-family: 'Mont', sans-serif; 
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 42px;
+  }
+  
+  .btn-primary{
+    background: #D5D984;
+    color: #000000;
+    border-color: #000000;
+    font-family: 'Mont', sans-serif; 
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    padding: 15px 20px;
+  gap: 10px;
+  width: 100%;
+  max-width: 216px;
+    max-height: 62px;
+  height: 100%;
+  border-radius: 5px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  margin-right: 10px;
+  }
+  
+  .btn-primary:hover {
+    color: #3E6C72;
+    background: #D5D984;
+    border-color: #000000;
+    text-decoration: underline;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  
+  .btn-primary:focus {
+    color: #000000;
+    background: #BADAD5!important;
+    border-color: #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  
+  }
+  .btn-primary:active {
+    color: #000000;
+    background: #D8BDF2!important;
+    border-color: #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  
+  .btn-primary:disabled {
+    color: #000000;
+    background: #B5B5B5;
+    border-color: #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  } 
+  
+
+/* <---- about me / goals ---> */
+
+  .section-container{
+    display: flex;
+    position: absolute;
+    background-color: #ffffff;
+    font-family: 'Mont', sans-serif;  
+    top: 750px; 
+    left: 125px; 
+    width: 100%;
+    max-width: 1465px; 
+    height: 100%;
+    max-height: 1050px;
+z-index: 1;
+  }
+
+  .sections {
+    position: relative;
+    width: 548px;
+height: 1040px;
+text-align: center;
+
+  }
+
+  .section-1 {
+    display: flex;
+    position:absolute;
+    top: 60px;
+  left: 0;
+    padding: 20px;
+    
+  }
+
+  .section-2 {
+    display: flex;
+    position:absolute;
+    top: 500px;
+    left: 0px;
+    padding: 20px;
+  }
+
+  /* Media query for screens smaller than 768px */
+  @media (max-width: 767px) {
+    .section-1, .section-2{
+      display: flex;
+      max-width: 100%;
+      padding: 10px;
+    }
+  }
+
+.mentee {
+    display: block;
+    position:absolute;
+    top: 100px;
+    background-color: #3E6C72;
+    width: 100%;
+    max-width: 434px;
+    height: 100%;
+    max-height: 96px;
+    
+}
+
+.title {
+    position:absolute;
+    color: #D8BDF2;
+    font-family: 'Mont', sans-serif; 
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 32px;
+    padding: 15px 20px;
+}
+
+.subtitle {
+    color: #ffffff;
+    font-family: 'Mont', sans-serif; 
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 15px 20px;
+}
+
+.review {
+    display: block;
+    position:absolute;
+   box-sizing: #3E6C72;
+    width: 100%;
+    max-width: 434px;
+    height: 100%;
+    border: 2px solid #3E6C72;
+    border-radius: 5px;
+}
+
+.rinfo {
+    font-family: 'Mont', sans-serif; 
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.name {
+    color: #3E6C72;
+    font-family: 'Mont', sans-serif; 
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 24px; 
+}
+
+/* <---- calendar ---> */
+.dropdown-menu {
+  position:relative;
+  left: 300px;
+  width: 588px;
+height: 500px;
+  top: 1500px;
+  
+  
+}
+
+.dropdown-item-danger {
+  color: var(--bs-red);
+}
+.dropdown-item-danger:hover,
+.dropdown-item-danger:focus {
+  color: #fff;
+  background-color: var(--bs-red);
+}
+.dropdown-item-danger.active {
+  background-color: var(--bs-red);
+}
+
+.btn-hover-light {
+  background-color: var(--bs-white);
+}
+.btn-hover-light:hover,
+.btn-hover-light:focus {
+  color: var(--bs-blue);
+  background-color: var(--bs-light);
+}
+
+.cal-month,
+.cal-days,
+.cal-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+
+}
+ 
+.text-muted-2{
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 31px;
+}
+
+.cal-month-name {
+    color: #3E6C72;
+  grid-column-start: 2;
+  grid-column-end: 7;
+  text-align: center;
+  font-family: 'Mont';
+font-style: normal;
+font-weight: 900;
+font-size: 24px;
+line-height: 41px;
+}
+
+.cal-weekday,
+.cal-btn {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-family: 'Mont';
+font-style: normal;
+font-weight: 300;
+font-size: 24px;
+line-height: 41px;
+
+}
+.cal-btn:not([disabled]) {
+  font-weight: 500;
+}
+.cal-btn:hover{
+  background-color: #3E6C72;
+  color:#D5D984;
+  text-decoration: underline;
+}
+
+.cal-btn:focus, .cal-btn:active {
+    background-color: #D8BDF2;
+    color: #000000;
+}
+
+.cal-btn[disabled] {
+  border: 0;
+  opacity: .5;
+}
+
+.legend-1 {
+    width: 300px;
+    height: 54px;
+    margin-left: 10px;
+    margin-top: 25px;
+}
+
+.dropdown-menu-1 {
+list-style: none;
+}
+
+.booking {
+    margin-top: 40px;
+}
+
+.bookapt {
+    color: #000000;
+    font-style: normal;
+font-weight: 900;
+font-size: 24px;
+line-height: 41px;
+}
+
+.form-control-dark {
+  background-color: rgba(255, 255, 255, .05);
+  border-color: rgba(255, 255, 255, .15);
+}
+
+
+.w-220px {
+  width: 220px;
+}
+
+.w-280px {
+  width: 280px;
+}
+
+.w-340px {
+  width: 340px;
+}
+
+.w-600px {
+  width: 600px;
+}
+
+
+
+/* <---- footer ---> */  
+footer {
+    color: #000000!important;
+    position: relative;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    z-index: 2;
+    overflow: hidden;
+    background-color: #3E6C72;
+    
+  }
+  .nav-item1 {
+    text-decoration: none;
+    font-family: 'Mont', sans-serif; 
+    font-style:normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    padding: 20px;
+  
+  }
+  
+  a {
+    color: #ffffff;
+  }
+  
+  a:hover {
+    color:#D5D984;
+  }
+  
+  .icon {
+    display: inline-block;
+    list-style: none;
+  
+  
+  }
+  
+  .icon img {
+    width: 100%;
+    max-width: 40px;
+    height: 100%;
+    max-height: 40px;
+    margin: 10px;
+  
+    
+  }
+  
+  .copyright {
+    font-family: 'Mont', sans-serif; 
+    font-style:normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: #ffffff;
+  
+  }
+  
+  

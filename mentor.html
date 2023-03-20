@@ -10,129 +10,135 @@
         <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/dropdowns/">
         <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" >
         <link href="https://fonts.cdnfonts.com/css/mont" rel="stylesheet">
-        <link rel="stylesheet" href="css/mm.css">
-  
-
-                
-
-        <title>eMentor</title>
+        <link rel="stylesheet" href="css/mentor.css">
 
     </head>
         
     <body>
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
-            <div class="container-fluid">
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-mdb-toggle="collapse"
-                data-mdb-target="#navbarExample01"
-                aria-controls="navbarExample01"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <i class="fas fa-bars"></i>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarExample01">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item active">
-                    <a class="nav-link" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+          <!-- Navbar -->
+       <nav class="navbar navbar-expand-lg navbar-light bg-white" style="padding: 0px !important;">
+        <div class="container-fluid" style="background-color: #3E6C72;">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarExample01"
+            aria-controls="navbarExample01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarExample01">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" aria-current="page" href="index.html"><img src="images/ementor-logo-white.png" height="58" alt="eMentor logo - handshake."/></a>
+              </li>
+              <li class="nav-item2">
+                <a class="nav-link" ahref="#" style="color: white;font-weight: bold; color: white; font-weight: bold; width: 236px !important; margin-right: 0px !important;"><u>Become a Mentor</u></a>
+                <a class="nav-link" aria-current="page" href="#" style="color: white; font-weight: bold; width: 191px !important;"><u>Find a Mentor</u></a>
+              </li>
+            </ul>
+                <div class="nav-btn" style="right: auto !important; margin-right: 0px !important; left: auto !important; margin-left: 90px !important;">
+                  <button class="btn sign-link" href="#">Logout</button>&nbsp;&nbsp;
+                  <a href="mentee.html">
+                    <img src="images/nav-mentee-profile.png" alt="Button Image" style="width:99px; height:99px; margin-left:20px; margin-right:-10px;">
+                  </a>
+                </div>
+        
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar -->
+
+<div class="b-example-divider"></div>
 
  <!-- About Mentor /photo -->
- <section style="background-color: #eee;">
-    <div class="container py-5">
+ <section style="background-color: #BADAD5;">
+  <div class="container py-5" style="margin-left: 110px !important; margin-right: 110px !important;">
   
-      <div class="grid-container">
-            <div class="column-1">
-                <div class="card mb-8">
-                  <div class="card-body text-center">
-                    <img src="images/sophia.png" alt="avatar"
-                      class="rounded-circle img-fluid" style="height: 100%; width: 150%;">
-                  </div>
-                  </div>
-                </div>
- <!-- About Mentor /info -->
-                  <div class="column-2">
-                    <div class="card mb-8">
-                      <div class="card-body">
-                          <h5 class="my-3">John Smith</h5>
-                          <p class="text-muted mb-1">Full Stack Developer</p>
-                          <p class="text-muted mb-4">Bay Area, San Francisco, CA</p>
-                          <ul class="list-group list-group-flush rounded-3">
-                              <li class="list-group-item d-flex justify-content-left align-items-left p-3">
-                                <i class="fas fa-globe fa-lg text-warning"></i>
-                                <p class="mb-0">https://mdbootstrap.com</p>
-                              </li>
-                              <li class="list-group-item d-flex justify-content-left align-items-left p-3">
-                                <i class="fab fa-github fa-lg" style="color: #333333;"></i>
-                                <p class="mb-0">mdbootstrap</p>
-                              </li>
-                              <li class="list-group-item d-flex justify-content-left align-items-left p-3">
-                                <i class="fab fa-twitter fa-lg" style="color: #55acee;"></i>
-                                <p class="mb-0">@mdbootstrap</p>
-                              </li>
-                              <li class="list-group-item d-flex justify-content-left align-items-left p-3">
-                                <i class="fab fa-instagram fa-lg" style="color: #ac2bac;"></i>
-                                <p class="mb-0">mdbootstrap</p>
-                              </li>
-                              <li class="list-group-item d-flex justify-content-left align-items-left p-3">
-                                <i class="fab fa-facebook-f fa-lg" style="color: #3b5998;"></i>
-                                <p class="mb-0">mdbootstrap</p>
-                              </li>
-                            </ul><br>
-                          <div class="d-flex justify-content-center mb-2">
-                            <button type="button" class="btn btn-primary">Follow</button>&nbsp;
-                            <button type="button" class="btn btn-outline-primary ms-1">Message</button>
-                          </div>
-                        </div>
+    <div style="display: grid; grid-template-columns: 4.8fr 8fr;">
+        <div class="col-lg-12" style="padding-left: 0px !important;">
+            <div class="card mb-8">
+              <div class="card-body" style="padding: 0px !important;">
+                <img src="images/hannahh.jpg" alt="avatar" class="img-fluid" style="height: auto; width: 100%;">
+              </div>
+          </div>
+              </div>
+              <div class="col-lg-12" style="padding-right: 0px !important;">
+                <div class="card mb-8-1" style="width: 917px !important;">
+                  <div class="card-body2">
+                      <h1 class="my-3">Hannah Hunt, 27</h1><br>
+                      <p class="text-muted">Graphic Designer</p>
+                      <p class="text-muted">Industry: Retail &amp; Merchandising</p>
+                      <p class="text-muted">Denver, CO</p><br>
+                      <p class="text-muted-1">I’ve been a designer for 5 years, and I’m extremely passionate about my field. I offer coffee chats, resume reviewals, and full sessions. Let’s get connected! </p>
+                      <div class="d-flex justify-content-end mb-2" style="width: 725px; margin-left: 75px !important;">
+                        <button class="btn btn-primary" type="button">Follow</button>
+                        <button class="btn btn-primary" type="button">Message</button>
                       </div>
                     </div>
-                
-        
-          </div>     
+                  </div>
+                </div>
+     
+    
+      </div>     
         
 
  <!-- Section/ achievements -->
 <br>
-<section class="section-container">
+<section class="section-container" style="height: 1050px;">
   <div class="sections">
 <div class="section-1">
-    <h2>Achievements</h2>
-    <p>Section content goes here.</p>
+    <h1 style="margin-left: 100px !important; margin-bottom: 0px !important;">Achievements:</h1>
+    <div class="mentee" style="left: 120px !important; width: 382px !important; padding-bottom: 0px !important; height: 80px !important;">
+      <p class="title" style="padding-bottom: 0px !important;">50 Mentees</p><br>
+      <p class="subtitle" style="width: 130px !important; padding-top: 20px !important; padding-bottom: 0px !important; margin-bottom: 0px !important;">Since 2020</p>
+    </div>
+    <div class="mentee" style="left: 120px; height: 80px; width: 382px !important; padding-bottom: 0px !important; top: 100px !important; margin-top: 100px !important;">
+      <p class="title" style="margin-bottom: 0px !important;">Top 50 Mentors</p><br>
+      <p class="subtitle" style="width: 100px !important; padding-bottom: 0px !important; padding-top: 20px !important; margin-bottom: 0px !important;">of 2023</p>
+    </div>
+    <div class="mentee" style="left: 120px; height: 80px; margin-top: 200px !important; width: 382px !important;">
+      <p class="title" style="margin-bottom: 0px !important;">Fast Responder</p><br>
+      <p class="subtitle" style="width: 293px !important; padding-bottom: 0px !important; padding-top: 20px !important; margin-bottom: 0px !important; padding-left: 16px !important;">Usually responds within 1 hour</p>
+    </div>
+
 </div>
 
 <!-- Section/ testimonials -->
   <div class="section-2">
-    <h2>Testimonials</h2>
-    <p>Section content goes here.</p>
+    <h1 style="margin-left: 100px; margin-bottom: 0px;">Testimonials:</h1>
+   <div class="review" style="top: 75px; height: 200px; left: 120px;">
+    <img src="images/stars.png" style="width: 130.07px; height: 22.01px; margin-left: -230px; padding-top: 0px !important; margin-top: 15px !important;">
+    <p class="rinfo" style="text-align: left; margin-bottom: 0px; margin-left: 35px; margin-right: 35px;">Thanks to Hannah, I found a career I feel truly passionate about.</p>
+    <img src="images/madeleine.jpg" style="box-sizing: border-box; border: 1px solid rgb(189, 189, 189); border-radius: 50%; padding: 5px; width: 100%; max-width: 100px; height: 100%; max-height: 100px; margin-left: -250px;">
+    <p class="name" style="margin-bottom: 0px; width: 130px; top: auto; margin-top: -70px; margin-left: 170px;">Madeleine S, 30</p>
+    <p style="width: 145px; margin-left: 165px; padding-left: 0px; margin-bottom: 0px;">Project Manager</p>
+   </div>
+
+   <div class="review" style="top: 300px; height:200px; left: 120px;">
+    <img src="images/stars.png" style="width: 130.07px; height: 22.01px; margin-left: -230px; padding-top: 0px !important; margin-top: 15px !important;">
+    <p class="rinfo" style="text-align: left; margin-bottom: 0px; margin-left: 35px; margin-right: 35px;">I have enjoyed my time with Hannah, and I have learned so much as a result.</p>
+    <img src="images/mentor4.jpg" style="box-sizing: border-box; border: 1px solid rgb(189, 189, 189); border-radius: 50%; padding: 5px; width: 100%; max-width: 100px; height: 100%; max-height: 100px; margin-left: -250px;"><br>
+    <p class="name" style="margin-bottom: 0px; width: 125px; top: auto; margin-top: -70px; margin-left: 155px;">Regina M, 35</p>
+    <p style="width: 140px; margin-left: 163px; margin-bottom: 0px;">Business Analyst</p>
+   </div>
+    
   </div> 
 </div>
  <!-- Section/ calendar -->
- <div class="dropdown-menu d-block position-static p-2 shadow rounded-3 w-340px">
+ <h1 style="margin-left: 180px; margin-bottom: 0px; top: 0px !important; margin-top: 80px !important;">Book a Session:</h1><br>
+ <div class="dropdown-menu d-block position-static p-2 shadow rounded-3 w-340px;" style="margin-top: 160px !important; border-top-width: 0px !important; left: 0px !important; margin-left: -400px !important;">
    <div class="d-grid gap-1">
      <div class="cal">
        <div class="cal-month">
          <button class="btn cal-btn" type="button">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+          <svg xmlns="https://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
           </svg>
          </button>
-         <strong class="cal-month-name">June</strong>
+         <strong class="cal-month-name">March</strong>
          <select class="form-select cal-month-name d-none">
            <option value="January">January</option>
            <option value="February">February</option>
@@ -148,12 +154,12 @@
            <option value="December">December</option>
          </select>
          <button class="btn cal-btn" type="button">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+          <svg xmlns="https://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
           </svg>
          </button>
        </div>
-       <div class="cal-weekdays text-muted">
+       <div class="cal-weekdays text-muted-2">
          <div class="cal-weekday">Sun</div>
          <div class="cal-weekday">Mon</div>
          <div class="cal-weekday">Tue</div>
@@ -163,6 +169,7 @@
          <div class="cal-weekday">Sat</div>
        </div>
        <div class="cal-days">
+        <button class="btn cal-btn" disabled type="button">29</button>
          <button class="btn cal-btn" disabled type="button">30</button>
          <button class="btn cal-btn" disabled type="button">31</button>
  
@@ -174,10 +181,10 @@
          <button class="btn cal-btn" type="button">6</button>
          <button class="btn cal-btn" type="button">7</button>
  
-         <button class="btn cal-btn" type="button">8</button>
-         <button class="btn cal-btn" type="button">9</button>
-         <button class="btn cal-btn" type="button">10</button>
-         <button class="btn cal-btn" type="button">11</button>
+         <button class="btn cal-btn" type="button"><b>8</b></button>
+         <button class="btn cal-btn" type="button"><b>9</b></button>
+         <button class="btn cal-btn" type="button"><b>10</b></button>
+         <button class="btn cal-btn" type="button"><b>11</b></button>
          <button class="btn cal-btn" type="button">12</button>
          <button class="btn cal-btn" type="button">13</button>
          <button class="btn cal-btn" type="button">14</button>
@@ -201,7 +208,27 @@
          <button class="btn cal-btn" type="button">29</button>
          <button class="btn cal-btn" type="button">30</button>
          <button class="btn cal-btn" type="button">31</button>
+         
        </div>
+       <div class="legend">
+        <p class="legend-1"><b>* Bold dates = Available</b></p>
+       </div>
+
+       <div class="booking">
+        <p class="bookapt">Book Hannah for:</p>
+       </div>
+
+       <div class="dropdown-menu-1">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Select Appointment Time
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+
      </div>
    </div>
  </div>
@@ -216,18 +243,29 @@
 
 </body>
 
-<br><br><br><br>
+<div class="b-example-divider" style="margin-top: 1050px !important; margin-bottom: 0px !important;"></div>
+
 <!-- Footer -->
-<div class="footer">
-  <footer class="py-3 my-4">
-    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About Us</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contact Us</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Site Map</a></li>
+<div class="footer" style="top: auto !important; margin-top: 0px !important;">
+  <footer class="py-3 my-4" style="margin-top: 0px !important;">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3" style="margin-top: 0px !important;">
+      <li class="nav-item1"><a href="#">About Us</a></li>
+      <li class="nav-item1"><a href="#">Contact Us</a></li>
+      <li class="nav-item1"><a href="#">FAQs</a></li>
+      <li class="nav-item1"><a href="#">Site Map</a></li>
+ 
+      <ul class="icon justify-content-center">
+      <li class="icon"><a href="#"><img src="images/icon-phone.png"></a></li>
+      <li class="icon"><a href="#"><img src="images/icon-email.png"></a></li>
+      <li class="icon"><a href="#"><img src="images/Facebook.png"></a></li>
+      <li class="icon"><a href="#"><img src="images/Twitter.png"></a></li>
+      <li class="icon"><a href="#"><img src="images/Instagram.png"></a></li>
     </ul>
+  </ul>
     <p class="copyright">&copy; 2023 eMentor, Inc.</p>
   </footer>
 </div>
+<!-- Footer -->
+
 </html>
     
