@@ -204,9 +204,9 @@ padding: 0px;
 /* <---- carousel ---> */  
 .carousel-section {
     background-color: #3E6C72;
-    width: 1724px;
+    width: 1709px;
     height: 920px;
-    margin-left: -48px;
+
     left: 0px;
     
 }
@@ -218,15 +218,61 @@ padding: 0px;
     height: 783px
 }
 
+.carousel-caption {
+    top: 150px;
+    height: 120px;
+}
+
+
+.container {
+    width: 1303px;
+    margin-right: 0px; 
+    margin-left: -250px; 
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.col-sm {
+    width: 306px;
+    padding: 0;
+    margin: 10px;
+}
+
+.row {
+   height: 542px; 
+   width: 1400px;
+   top: 0px; 
+   margin-top: 50px;
+  
+}
+
+
 /* <---- testimonials ---> */  
 
 .testimonials {
     position: relative;
-    width: 1514px;
-    height: 986px;
-    left: 0px;
-    top: 800px;
+    padding: 0px 0px 0px 170px;
+    top: -10px; 
+    height: 800px; 
+    width: 1470px;
+ 
     
+}
+
+.review-1 {
+    font-family: 'Mont', sans-serif; 
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.px-xl-3 {
+    font-family: 'Mont', sans-serif; 
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
 }
 
 /* <---- footer ---> */  
@@ -234,6 +280,7 @@ footer {
     color: #000000!important;
     position: relative;
     left: 0px;
+    margin-top: 700px;
     bottom: 0px;
     width: 100%;
     z-index: 2;
