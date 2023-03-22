@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+        <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
@@ -8,10 +8,26 @@
         
         <link href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css" rel="stylesheet"/>
         <script src="bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
-    </head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        
+        <Style>
+            .body{
+                font-family: mont;
+            }
 
+            
+            .input-group {
+                color: white;
+                width: 500px;
+
+            }
+
+
+        </Style>
+
+    </head>
     <body>
-        <!-- Navbar -->
+          <!-- Navbar -->
        <nav class="navbar navbar-expand-lg navbar-light bg-white" style="padding: 0px !important;">
         <div class="container-fluid" style="background-color: #3E6C72;">
           <button
@@ -28,14 +44,14 @@
           <div class="collapse navbar-collapse" id="navbarExample01">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item active">
-                <a class="nav-link" aria-current="page" href="index.html"><img src="images/ementor-logo-white.png" height="58" alt="eMentor logo - handshake."/></a>
+                <a class="nav-link" aria-current="page" href="index.html"><img src="images/ementor-logo-white.png" height="58" alt="eMentor logo - handshake." style="margin-left: 125px"/></a>
               </li>
               <li class="nav-item2">
                 <a class="nav-link" ahref="#" style="color: white;font-weight: bold; color: white; font-weight: bold; width: 236px !important; margin-right: 0px !important;"><u>Become a Mentor</u></a>
-                <a class="nav-link" aria-current="page" href="#" style="color: white; font-weight: bold; width: 191px !important;"><u>Find a Mentor</u></a>
+                <a class="nav-link" aria-current="page" href="gallery.html" style="color: white; font-weight: bold; width: 191px !important;"><u>Find a Mentor</u></a>
               </li>
             </ul>
-                <div class="nav-btn" style="right: auto !important; margin-right: 0px !important; left: auto !important; margin-left: 90px !important;">
+                <div class="nav-btn" style="right: auto; margin-right: 50px; left: auto; margin-left: 0px;">
                   <button class="btn sign-link" href="#">Logout</button>&nbsp;&nbsp;
                   <a href="mentee.html">
                     <img src="images/nav-mentee-profile.png" alt="Button Image" style="width:99px; height:99px; margin-left:20px; margin-right:-10px;">
@@ -47,249 +63,216 @@
       </nav>
       <!-- Navbar -->
 
-    <!-- Gallery Start -->
+<div class="b-example-divider"></div>
+        
+    <!-- Mentor Gallery Start -->
     <div class="container-fluid pt-5">
-      <div class="row px-xl-5">
-          <!-- Filter Sidebar Start -->
-          <div class="col-lg-3 col-md-12">
-              <!-- Industry Start -->
-              <div class="border-bottom mb-4 pb-4">
-                  <h6 class="font-weight-semi-bold mb-4">Industry</h6>
-                  <form>
-                      <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
-                          <input type="checkbox" class="custom-control-input" checked id="price-all">
-                          <label class="custom-control-label" for="price-all">Tech</label>
-                          <span class="badge border font-weight-normal">1000</span>
-                      </div>
-                      <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
-                          <input type="checkbox" class="custom-control-input" id="price-1">
-                          <label class="custom-control-label" for="price-1">Retail & Merchandising</label>
-                          <span class="badge border font-weight-normal">150</span>
-                      </div>
-                      <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
-                          <input type="checkbox" class="custom-control-input" id="price-2">
-                          <label class="custom-control-label" for="price-2">Healthcare</label>
-                          <span class="badge border font-weight-normal">295</span>
-                      </div>
-                      <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
-                          <input type="checkbox" class="custom-control-input" id="price-3">
-                          <label class="custom-control-label" for="price-3">Operations</label>
-                          <span class="badge border font-weight-normal">246</span>
-                      </div>
-                      <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
-                          <input type="checkbox" class="custom-control-input" id="price-4">
-                          <label class="custom-control-label" for="price-4">Engineering</label>
-                          <span class="badge border font-weight-normal">145</span>
-                      </div>
-                      <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between">
-                          <input type="checkbox" class="custom-control-input" id="price-5">
-                          <label class="custom-control-label" for="price-5">Business</label>
-                          <span class="badge border font-weight-normal">168</span>
-                      </div>
-                  </form>
-              </div>
-              <!-- industry End -->
-              
-              <!-- Experience Start -->
-              <div class="border-bottom mb-4 pb-4">
-                  <h6 class="font-weight-semi-bold mb-4">Experience</h6>
-                  <form>
-                      <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
-                          <input type="checkbox" class="custom-control-input" checked id="color-all">
-                          <label class="custom-control-label" for="price-all">Entry</label>
-                          <span class="badge border font-weight-normal">1000</span>
-                      </div>
-                      <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
-                          <input type="checkbox" class="custom-control-input" id="color-1">
-                          <label class="custom-control-label" for="color-1">Intermediate</label>
-                          <span class="badge border font-weight-normal">150</span>
-                      </div>
-                      <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
-                          <input type="checkbox" class="custom-control-input" id="color-2">
-                          <label class="custom-control-label" for="color-2">Senior</label>
-                          <span class="badge border font-weight-normal">295</span>
-                      </div>
-                      <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
-                          <input type="checkbox" class="custom-control-input" id="color-3">
-                          <label class="custom-control-label" for="color-3">Executive</label>
-                          <span class="badge border font-weight-normal">246</span>
-                      </div>
-                      <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
-                          <input type="checkbox" class="custom-control-input" id="color-4">
-                          <label class="custom-control-label" for="color-4">Founder</label>
-                          <span class="badge border font-weight-normal">145</span>
-                      </div>
-                  </form>
-              </div>
-              <!-- Experience End -->
+        <div class="row px-xl-5">
+            <!-- Filter Sidebar Start -->
+            <div class="col-lg-2 col-md-12">
+                <!-- Industry Start -->
+                <div class="border-bottom mb-4 pb-4">
+                    <h5 class="font-weight-semi-bold mb-4">Industry</h5>
+                    <form>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" checked id="price-all">
+                            <label class="custom-control-label" for="price-all">Tech</label>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="price-1">
+                            <label class="custom-control-label" for="price-1">Retail & Merchandising</label>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="price-2">
+                            <label class="custom-control-label" for="price-2">Healthcare</label>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="price-3">
+                            <label class="custom-control-label" for="price-3">Operations</label>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="price-4">
+                            <label class="custom-control-label" for="price-4">Engineering</label>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between">
+                            <input type="checkbox" class="custom-control-input" id="price-5">
+                            <label class="custom-control-label" for="price-5">Business & Administration</label>
+                        </div>
+                    </form>
+                </div>
+                <!-- Industry End -->
+                
+                <!-- Experience Start -->
+                <div class="border-bottom mb-4 pb-4">
+                    <h5 class="font-weight-semi-bold mb-4">Experience</h5>
+                    <form>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" checked id="color-all">
+                            <label class="custom-control-label" for="price-all">Entry</label>                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="color-1">
+                            <label class="custom-control-label" for="color-1">Intermediate</label>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="color-2">
+                            <label class="custom-control-label" for="color-2">Senior</label>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="color-3">
+                            <label class="custom-control-label" for="color-3">Executive</label>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="color-4">
+                            <label class="custom-control-label" for="color-4">Founder</label>
+                        </div>
+                    </form>
+                </div>
+                <!-- Experience End -->
 
-              <!-- Community Start -->
-              <div class="mb-5">
-                  <h6 class="font-weight-semi-bold mb-4">Community</h6>
-                  <form>
-                      <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
-                          <input type="checkbox" class="custom-control-input" checked id="size-all">
-                          <label class="custom-control-label" for="size-all">First-Gen College Student</label>
-                          <span class="badge border font-weight-normal">1000</span>
-                      </div>
-                      <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
-                          <input type="checkbox" class="custom-control-input" id="size-1">
-                          <label class="custom-control-label" for="size-1">Immigrant</label>
-                          <span class="badge border font-weight-normal">150</span>
-                      </div>
-                      <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
-                          <input type="checkbox" class="custom-control-input" id="size-2">
-                          <label class="custom-control-label" for="size-2">BIPOC</label>
-                          <span class="badge border font-weight-normal">295</span>
-                      </div>
-                      <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
-                          <input type="checkbox" class="custom-control-input" id="size-3">
-                          <label class="custom-control-label" for="size-3">LGBTQA+</label>
-                          <span class="badge border font-weight-normal">246</span>
-                      </div>
-                      <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
-                          <input type="checkbox" class="custom-control-input" id="size-4">
-                          <label class="custom-control-label" for="size-4">First-Time Parent</label>
-                          <span class="badge border font-weight-normal">145</span>
-                      </div>
-                      <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between">
-                          <input type="checkbox" class="custom-control-input" id="size-5">
-                          <label class="custom-control-label" for="size-5">Example</label>
-                          <span class="badge border font-weight-normal">168</span>
-                      </div>
-                  </form>
-              </div>
-              <!-- Community End -->
-          </div>
-          <!-- Filters Sidebar End -->
+                <!-- Community Start -->
+                <div class="mb-5">
+                    <h5 class="font-weight-semi-bold mb-4">Community</h5>
+                    <form>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" checked id="size-all">
+                            <label class="custom-control-label" for="size-all">First-Gen College Student</label>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="size-1">
+                            <label class="custom-control-label" for="size-1">Immigrant</label>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="size-2">
+                            <label class="custom-control-label" for="size-2">BIPOC</label>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="size-3">
+                            <label class="custom-control-label" for="size-3">LGBTQA+</label>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="size-4">
+                            <label class="custom-control-label" for="size-4">First-Time Parent</label>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between">
+                            <input type="checkbox" class="custom-control-input" id="size-5">
+                            <label class="custom-control-label" for="size-5">Religious</label>
+                        </div>
+                    </form>
+                </div>
+                <!-- Community End -->
+                <div class="filter-button">
+                    <button type="button" class="btn btn-primary btn-lg btn-block" style="background-color: #D5D984; color: black;">Filter</button>
+                </div>
+            </div>
+            <!-- Filter Sidebar End -->
 
 
-          <!-- Mentors Start -->
-          <div class="col-lg-9 col-md-12">
-              <div class="row pb-3">
-                  <div class="col-12 pb-1">
-                      <div class="d-flex align-items-center justify-content-between mb-4">
-                          <form action="">
-                              <div class="input-group">
-                                  <input type="text" class="form-control" placeholder="Search">
-                                  <div class="input-group-append">
-                                      <span class="input-group-text bg-transparent text-primary">
-                                          <i class="fa fa-search"></i>
-                                      </span>
-                                  </div>
-                              </div>
-                          </form>
-                          <div class="dropdown ml-4">
-                              <button class="btn border dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
-                                      aria-expanded="false">
-                                          Sort by
-                                      </button>
-                              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="triggerId">
-                                  <a class="dropdown-item" href="#">Best Rating</a>
-                                  <a class="dropdown-item" href="#">Availability</a>
-                                  <a class="dropdown-item" href="#">New Mentors</a>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 col-sm-12 pb-1">
-                      <div class="card product-item border-0 mb-4">
-                          <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                              <img class="img-fluid w-100" src="assets/Gallery assets/Mentor Card.png" alt="">
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 col-sm-12 pb-1">
-                      <div class="card product-item border-0 mb-4">
-                          <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                              <img class="img-fluid w-100" src="assets/Gallery assets/Mentor Card-1.png" alt="">
-                          </div>
-                                                </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 col-sm-12 pb-1">
-                      <div class="card product-item border-0 mb-4">
-                          <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                              <img class="img-fluid w-100" src="assets/Gallery assets/Mentor Card-2.png" alt="">
-                          </div>
-                          </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 col-sm-12 pb-1">
-                      <div class="card product-item border-0 mb-4">
-                          <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                              <img class="img-fluid w-100" src="assets/Gallery assets/Mentor Card-3.png" alt="">
-                          </div>
-                                             </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 col-sm-12 pb-1">
-                      <div class="card product-item border-0 mb-4">
-                          <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                              <img class="img-fluid w-100" src="assets/Gallery assets/Mentor Card-4.png" alt="">
-                          </div>
-                                               </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 col-sm-12 pb-1">
-                      <div class="card product-item border-0 mb-4">
-                          <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                              <img class="img-fluid w-100" src="assets/Gallery assets/Mentor Card-5.png" alt="">
-                          </div>
-    
-                      </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 col-sm-12 pb-1">
-                      <div class="card product-item border-0 mb-4">
-                          <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                              <img class="img-fluid w-100" src="assets/Gallery assets/Mentor Card-6.png" alt="">
-                          </div>
-                         
-                      </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 col-sm-12 pb-1">
-                      <div class="card product-item border-0 mb-4">
-                          <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                              <img class="img-fluid w-100" src="assets/Gallery assets/Mentor Card-7.png" alt="">
-                          </div>
-                                                </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 col-sm-12 pb-1">
-                      <div class="card product-item border-0 mb-4">
-                          <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                              <img class="img-fluid w-100" src="assets/Gallery assets/Mentor Card-8.png" alt="">
-                          </div>
-                         
-                      </div>
-                  </div>
-                  <div class="col-12 pb-1">
-                      <nav aria-label="Page navigation">
-                        <ul class="pagination justify-content-center mb-3">
-                          <li class="page-item disabled">
-                            <a class="page-link" href="#" aria-label="Previous">
-                              <span aria-hidden="true">&laquo;</span>
-                              <span class="sr-only">Previous</span>
-                            </a>
-                          </li>
-                          <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                          <li class="page-item"><a class="page-link" href="#">2</a></li>
-                          <li class="page-item"><a class="page-link" href="#">3</a></li>
-                          <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Next">
-                              <span aria-hidden="true">&raquo;</span>
-                              <span class="sr-only">Next</span>
-                            </a>
-                          </li>
-                        </ul>
-                      </nav>
-                  </div>
-              </div>
-          </div>
-          <!-- Shop Product End -->
-      </div>
-  </div>
-  <!-- Shop End -->
-
-
+            <!-- Mentor Shop Start -->
+            <div class="col-lg-9 col-md-12">
+                <div class="row pb-3">
+                    <!--Search/sort container Start-->
+                    <div class="col-12 pb-1">
+                        <div class="d-flex align-items-center justify-content-between mb-4">
+                            <!--Search Bar Start-->
+                            <form action="/serach">
+                                <label for="search">Search for a mentor</label>
+                                <div class="input-group">
+                                    <input type="search" class="form-control" placeholder="Search">
+                                    <div>
+                                        <input type="submit" value="" class="input-group" style="background-color: #3E6C72; width: 50px; height: 40px;">
+                                    </div>
+                                </div>
+                            </form>
+                            <!--Search Bar End-->
+                            <!--Sort By Start -->
+                            <div class="dropdown ml-4">
+                                <label>Sort By:</label>
+                                <button class="btn border dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false" style="background-color: #D5D984;">
+                                            Recommended
+                                        </button>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="triggerId">
+                                    <a class="dropdown-item" href="#">Best Rating</a>
+                                    <a class="dropdown-item" href="#">Availability</a>
+                                    <a class="dropdown-item" href="#">Recommended</a>
+                                </div>
+                            </div>
+                            <!--Sort By End -->
+                        </div>
+                    </div>
+                    <!--Search/sort container End -->
+                    <!--Gallery Start-->
+                    <div class="col-lg-4 col-md-6 col-sm-12 pb-1">
+                        <div class="card product-item border-0 mb-4">
+                            <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                                <img class="img-fluid w-100" src="assets/Gallery assets/Mentor Card-1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 pb-1">
+                        <div class="card product-item border-0 mb-4">
+                            <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                                <img class="img-fluid w-100" src="assets/Gallery assets/Mentor Card-2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 pb-1">
+                        <div class="card product-item border-0 mb-4">
+                            <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                                <img class="img-fluid w-100" src="assets/Gallery assets/Mentor Card-3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 pb-1">
+                        <div class="card product-item border-0 mb-4">
+                            <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                                <img class="img-fluid w-100" src="assets/Gallery assets/Mentor Card-4.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 pb-1">
+                        <div class="card product-item border-0 mb-4">
+                            <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                                <img class="img-fluid w-100" src="assets/Gallery assets/Mentor Card-5.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 pb-1">
+                        <div class="card product-item border-0 mb-4">
+                            <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                                <img class="img-fluid w-100" src="assets/Gallery assets/Mentor Card-6.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 pb-1">
+                        <div class="card product-item border-0 mb-4">
+                            <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                                <img class="img-fluid w-100" src="assets/Gallery assets/Mentor Card-7.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 pb-1">
+                        <div class="card product-item border-0 mb-4">
+                            <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                                <img class="img-fluid w-100" src="assets/Gallery assets/Mentor Card.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 pb-1">
+                        <div class="card product-item border-0 mb-4">
+                            <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                                <img class="img-fluid w-100" src="assets/Gallery assets/Mentor Card-11.png" alt="">
+                            </div>
+                    </div>
+                    <!--Gallery End-->
+                </div>
+            </div>
+            <!-- Mentor Shop End -->
+        </div>
+    </div>
+    <!-- Mentor Galley End -->
     </body>
-
-   <!-- Footer -->
+     <!-- Footer -->
 <div class="footer">
     <footer class="py-3 my-4">
       <ul class="nav justify-content-center border-bottom pb-3 mb-3">
@@ -310,5 +293,4 @@
     </footer>
   </div>
   <!-- Footer -->
-
 </html>
